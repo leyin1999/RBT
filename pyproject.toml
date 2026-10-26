@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rbt-phase1"
+version = "0.1.0"
+description = "Mercury A1 + Gemini 215 offline integration skeleton"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<3"]
+
+[project.scripts]
+rbt-demo = "rbt.app:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
