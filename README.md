@@ -1,3 +1,17 @@
+# RBT Navigation — 项目结构升级说明
+
+> **V2 目录调整提案**：在保留原有第一阶段可运行离线程序的基础上，新增医学导航软件、图谱、配准、机器人只读通信、相机、仿真与仿体传感研究的模块边界。以下原有第一阶段指南继续有效。
+
+- [系统架构与模块边界](docs/architecture.md)
+- [24 周开发路线](docs/roadmap-24-weeks.md)
+- [坐标系和单位约定](docs/coordinate_frames.md)
+- [安全与适用范围](docs/safety.md)
+- [Slicer 软件模块入口](apps/slicer_extension/RBTNavigation/README.md)
+
+**当前状态**：新增目录仍是占位骨架，不表示 Slicer UI、ANTs 配准或 Webots 模型已经实现。原来的 `python -m rbt.app` 和 `tests/test_offline.py` 不变。
+
+---
+
 # RBT：Mercury A1 + Gemini 215 第一阶段骨架
 
 目标：在设备未完全接入时，先跑通“采集 → 视觉点 → 坐标变换 → 安全检查 → 记录 → 回放”。相机安装于机械臂末端，采用 Eye-in-Hand。
